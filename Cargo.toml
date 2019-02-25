@@ -1,0 +1,13 @@
+[package]
+name = "diesel-postgis"
+version = "0.1.0"
+authors = ["Peter Farr <Peter@PrismaPhonic.com>"]
+edition = "2018"
+keywords = ["database", "sql", "orm"]
+categories = ["database"]
+
+[dependencies]
+diesel = { version = "1.4.1", features = ["postgres"] }
+postgis = "0.6.0"
+serde = { version = "1.0.88", features = ["derive"], optional = true }
+geo = "0.12.0"
